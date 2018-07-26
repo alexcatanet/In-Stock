@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/textview_height"
+            android:gravity="center"
+            android:text="@string/item_info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height_small"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout style="@style/linearLayoutStyle">
+
+            <TextView
+                style="@style/textViewInfo"
+                android:text="@string/item_name" />
+
+            <EditText
+                android:id="@+id/edit_item_name"
+                style="@style/textViewInfo2"
+                android:hint="@string/name_of_item"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:text="Name" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayoutStyle">
+
+            <TextView
+                style="@style/textViewInfo"
+                android:text="@string/price" />
+
+            <EditText
+                android:id="@+id/edit_item_price"
+                style="@style/textViewInfo3"
+                android:gravity="center_horizontal"
+                android:hint="@string/item_price"
+                android:inputType="number"
+                tools:text="@string/price_hint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/currency_symbol"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayoutStyle">
+
+            <TextView
+                style="@style/textViewInfo"
+                android:text="@string/in_stock" />
+
+            <ImageButton
+                android:id="@+id/edit_quantity_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/minus"
+                android:src="@drawable/ic_remove_circle_outline_black" />
+
+            <EditText
+                android:id="@+id/edit_item_quantity"
+                style="@style/textViewInfo3"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                tools:ignore="LabelFor"
+                tools:text="5" />
+
+            <ImageButton
+                android:id="@+id/edit_quantity_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/plus"
+                android:src="@drawable/ic_add_circle_outline_black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:background="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/textview_margin_bottom"
+            android:gravity="center"
+            android:text="@string/supplier_info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height_small"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout style="@style/linearLayoutStyle">
+
+            <TextView
+                style="@style/textViewInfo"
+                android:text="@string/supplier" />
+
+            <EditText
+                android:id="@+id/edit_supplier"
+                style="@style/textViewInfo3"
+                android:hint="@string/supplier_name"
+                android:inputType="text"
+                tools:text="Name" />
+
+            <Space
+                android:layout_width="@dimen/space"
+                android:layout_height="@dimen/space" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearLayoutStyle">
+
+            <TextView
+                style="@style/textViewInfo"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                style="@style/textViewInfo3"
+                android:hint="@string/supplier_phone"
+                android:inputType="phone"
+                tools:text="+351 6667 7000" />
+
+            <ImageButton
+                android:id="@+id/phoneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/phone_button"
+                android:src="@drawable/ic_phone_black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

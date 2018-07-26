@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/margin_end"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_padding">
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/textViewListItem"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:text="@string/category_unknown1" />
+
+        <TextView
+            android:id="@+id/item_price"
+            style="@style/textViewListItem"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:text="@string/category_unknown2" />
+
+        <TextView
+            android:id="@+id/item_in_stock"
+            style="@style/textViewListItem"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:text="@string/category_unknown3" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/sell_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/textview_height"
+        android:contentDescription="@string/selling_icon"
+        android:src="@drawable/ic_shopping_cart_black" />
+</LinearLayout>

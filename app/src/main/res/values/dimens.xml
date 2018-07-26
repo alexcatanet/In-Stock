@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textview_margin_bottom">1dp</dimen>
+    <dimen name="textview_height_small">2dp</dimen>
+    <dimen name="textview_height">4dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="space">40dp</dimen>
+    <dimen name="margin_end">80dp</dimen>
+    <dimen name="image_width">220dp</dimen>
+    <dimen name="image_height">150dp</dimen>
+</resources>
